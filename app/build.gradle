@@ -1,29 +1,35 @@
+// app/build.gradle
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    // YAHAN ADDRESS THEEK KIYA GAYA HAI
     namespace 'com.hashgen.smstowebhook'
     compileSdk 33
 
     defaultConfig {
-        // YAHAN BHI ADDRESS THEEK KIYA GAYA HAI
         applicationId "com.hashgen.smstowebhook"
         minSdk 21
         targetSdk 33
         versionCode 1
         versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    buildFeatures {
-        viewBinding true
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
 }
 
