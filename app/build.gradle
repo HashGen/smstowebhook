@@ -4,11 +4,13 @@ plugins {
 }
 
 android {
-    namespace 'com.myown.smsapp'
+    // YAHAN ADDRESS THEEK KIYA GAYA HAI
+    namespace 'com.hashgen.smstowebhook'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.myown.smsapp"
+        // YAHAN BHI ADDRESS THEEK KIYA GAYA HAI
+        applicationId "com.hashgen.smstowebhook"
         minSdk 21
         targetSdk 33
         versionCode 1
